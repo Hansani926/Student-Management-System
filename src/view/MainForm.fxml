@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <Label layoutX="74.0" layoutY="51.0" prefHeight="17.0" prefWidth="403.0" text="Student Management System">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="108.0" prefWidth="600.0" />
+      <AnchorPane fx:id="root" layoutY="100.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="student" fitHeight="150.0" fitWidth="200.0" layoutX="58.0" layoutY="55.0" onMouseClicked="#studentOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/student.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Course" fitHeight="150.0" fitWidth="200.0" layoutX="238.0" layoutY="64.0" onMouseClicked="#CourseOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/course.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="64.0" onMouseClicked="#RegistrationOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/Registration.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
